@@ -16,7 +16,6 @@ chapte_name_list = []
 
 
 def get_html(url):
-    # url = 'http://www.quanshuwang.com/book/7/7709'
     req = urllib2.Request(url)
     html = urllib2.urlopen(req).read().decode('gbk')
     novel_info = {}
